@@ -12,6 +12,17 @@ body {
     font-family: $font-family;
 }
 
+p {
+    line-height: 160%;
+    color: $gray-blue;
+}
+
+h1,
+h2,
+h3 {
+    color: $dark-blue;
+}
+
 button {
     font-size: 1rem;
     font-family: $font-family;
