@@ -8,4 +8,118 @@
   text-decoration: none;
 }
 
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+button {
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.header {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.header__logo {
+  width: 160px;
+}
+.header__logo--white {
+  z-index: 3;
+}
+.header__logo--white .first-path {
+  fill: white;
+}
+.header__logo--white .second-path {
+  fill: #252b46;
+}
+.header__logo--white circle {
+  fill: white;
+}
+.header__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/icon-hamburger.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+  z-index: 3;
+}
+.header__button--close {
+  background-image: url(../images/icon-close.svg);
+}
+.header__nav-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: -100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(37, 43, 70, 0.9);
+  transition: top 0.5s ease;
+  z-index: 2;
+}
+.header__nav-container--show {
+  top: 0;
+}
+.header__nav {
+  width: 90%;
+  margin: 0 auto;
+}
+.header__list {
+  margin-top: 130px;
+  text-align: center;
+}
+.header__list-item {
+  padding: 1.2rem 0;
+  border-top: 1px solid #9194a1;
+}
+.header__list-item:last-child {
+  border-bottom: 1px solid #9194a1;
+}
+.header__link {
+  font-size: 1.2rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.header__login {
+  width: 90%;
+  margin: 30px auto 0 auto;
+  padding: 0.5rem 0;
+  display: block;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.header__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.header__social-icon {
+  width: 30px;
+  margin: 0 20px;
+}
+
 /*# sourceMappingURL=style.css.map */

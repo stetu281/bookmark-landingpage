@@ -7,3 +7,12 @@
     list-style-type: none;
     text-decoration: none;
 }
+
+body {
+    font-family: $font-family;
+}
+
+button {
+    font-size: 1rem;
+    font-family: $font-family;
+}
