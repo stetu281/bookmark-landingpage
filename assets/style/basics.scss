@@ -15,4 +15,8 @@ body {
 button {
     font-size: 1rem;
     font-family: $font-family;
+
+    &:hover {
+        cursor: pointer;
+    }
 }

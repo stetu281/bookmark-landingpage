@@ -111,4 +111,75 @@
         width: 30px;
         margin: 0 20px;
     }
+
+    @include tablet {
+        margin-top: 30px;
+        width: 90%;
+
+        &__button {
+            display: none;
+        }
+
+        &__nav-container {
+            @include flex-center;
+            position: static;
+            width: unset;
+            height: unset;
+            background-color: transparent;
+        }
+
+        &__nav {
+            width: auto;
+            margin: 0;
+        }
+
+        &__list {
+            margin-top: 0;
+            @include flex-center;
+        }
+
+        &__list-item {
+            padding: 0;
+            border: none;
+
+            &:last-child {
+                border: none;
+            }
+        }
+
+        &__link {
+            margin-right: 25px;
+            color: $dark-blue;
+            font-size: 1rem;
+
+            &:hover {
+                color: $red;
+            }
+        }
+
+        &__login {
+            margin: 0;
+            padding: 0.5rem 1.5rem;
+            background-color: $red;
+            font-size: 1rem;
+            border: 1px solid white;
+
+            &:hover {
+                color: $red;
+                background-color: transparent;
+                border-color: $red;
+                box-shadow: 0 5px 15px -4px rgba(0,0,0,0.3);
+            }
+        }
+
+        &__social {
+            display: none;
+        }
+    }
+
+    @include desktop {
+        &__link {
+            margin-right: 35px;
+        }
+    }
 }
