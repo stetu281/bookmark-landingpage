@@ -113,7 +113,6 @@
     }
 
     @include tablet {
-        width: 90%;
 
         &__button {
             display: none;
@@ -167,7 +166,6 @@
                 color: $red;
                 background-color: transparent;
                 border-color: $red;
-                box-shadow: 0 5px 15px -4px rgba(0,0,0,0.3);
             }
         }
 

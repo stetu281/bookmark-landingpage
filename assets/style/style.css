@@ -29,11 +29,12 @@ button {
 }
 button:hover {
   cursor: pointer;
+  box-shadow: 0 5px 15px -4px rgba(0, 0, 0, 0.3);
 }
 
 .header {
   width: 85%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -136,9 +137,6 @@ button:hover {
   margin: 0 20px;
 }
 @media screen and (min-width: 768px) {
-  .header {
-    width: 90%;
-  }
   .header__button {
     display: none;
   }
@@ -187,7 +185,6 @@ button:hover {
     color: #fa5757;
     background-color: transparent;
     border-color: #fa5757;
-    box-shadow: 0 5px 15px -4px rgba(0, 0, 0, 0.3);
   }
   .header__social {
     display: none;
@@ -205,7 +202,7 @@ button:hover {
 .hero__bg-element {
   width: 80%;
   height: 200px;
-  max-width: 600px;
+  max-width: 300px;
   position: absolute;
   top: 160px;
   right: 0;
@@ -215,7 +212,7 @@ button:hover {
 }
 .hero__content {
   width: 85%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -225,6 +222,7 @@ button:hover {
 .hero__img {
   margin-top: 100px;
   width: 110%;
+  max-width: 600px;
 }
 .hero__container {
   text-align: center;
@@ -253,8 +251,52 @@ button:hover {
   background-color: #5368df;
   color: white;
 }
+.hero__button--chrome:hover {
+  background-color: transparent;
+  color: #5368df;
+  border-color: #5368df;
+}
 .hero__button--firefox {
   background-color: rgba(145, 148, 161, 0.1);
+}
+.hero__button--firefox:hover {
+  background-color: transparent;
+  border-color: #252b46;
+}
+@media screen and (min-width: 768px) {
+  .hero__content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .hero__img {
+    order: 1;
+    width: 50%;
+    margin-right: -50px;
+  }
+  .hero__container {
+    width: 50%;
+    max-width: 500px;
+    text-align: left;
+  }
+  .hero__buttons {
+    justify-content: flex-start;
+  }
+  .hero__button--chrome {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero__bg-element {
+    top: 250px;
+    height: 250px;
+    max-width: 400px;
+  }
+  .hero__container {
+    font-size: 1.125rem;
+  }
+  .hero__title {
+    font-size: 3rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
