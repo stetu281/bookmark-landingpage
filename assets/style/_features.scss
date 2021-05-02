@@ -119,6 +119,7 @@
 
     &__img {
         width: 100%;
+        max-height: 220px;
     }
 
     &__container {
@@ -148,6 +149,7 @@
 
         &__img {
             width: 50%;
+            max-height: unset;
         }
 
         &__container {
