@@ -28,6 +28,7 @@
 
     &__link {
         color: rgba($dark-blue, 0.7);
+        pointer-events: none;
 
         &--active {
             color: $dark-blue;
@@ -63,6 +64,7 @@
         }
 
         &__link {
+
             &--active {
                 &::after {
                     width: 100%;
@@ -81,9 +83,6 @@
 
 .slider {
     margin-top: 60px;
-    width: 300%;
-    @include flex-center;
-    align-items: flex-start;
     position: relative;
 
     &__bg-element {
@@ -98,9 +97,17 @@
         z-index: -1;
     }
 
+    &__slides {
+        @include flex-center;
+        align-items: flex-start;
+        width: 300%;
+        position: relative;
+        left: 0;
+        transition: left .4s ease;
+    }
+
     &__slide {
         width: 100%;
-        position: relative;
     }
 
     &__content {
