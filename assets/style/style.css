@@ -325,6 +325,12 @@ button:hover {
 .features__list-item:last-child {
   border-bottom: 1px solid rgba(145, 148, 161, 0.2);
 }
+.features__list-item:hover {
+  cursor: pointer;
+}
+.features__list-item:hover > span {
+  color: #fa5757;
+}
 .features__link {
   color: rgba(37, 43, 70, 0.7);
   pointer-events: none;
@@ -342,10 +348,6 @@ button:hover {
   right: 0;
   bottom: 0;
   margin: auto;
-}
-.features__link:hover {
-  color: #fa5757;
-  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .features__list {
@@ -413,9 +415,47 @@ button:hover {
 }
 .slider__text {
   margin-top: 20px;
+  max-width: 400px;
 }
 .slider__button {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .slider__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .slider__img {
+    width: 50%;
+  }
+  .slider__container {
+    margin: 0;
+    width: 45%;
+    text-align: left;
+  }
+  .slider__button {
+    margin-top: 20px;
+    padding: 0.5rem 1rem;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    background-color: #5368df;
+    color: white;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .slider__bg-element {
+    top: 170px;
+    height: 250px;
+    max-width: 800px;
+    width: 50vw;
+  }
+  .slider__container {
+    width: 40%;
+    font-size: 1.125rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

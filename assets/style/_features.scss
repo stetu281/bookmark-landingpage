@@ -24,6 +24,14 @@
         &:last-child {
             border-bottom: 1px solid rgba($gray-blue, 0.2);;
         }
+
+        &:hover {
+            cursor: pointer;
+
+            & > span {
+                color: $red;
+            }
+        }
     }
 
     &__link {
@@ -44,11 +52,6 @@
                 bottom: 0;
                 margin: auto
             }
-        }
-
-        &:hover {
-            color: $red;
-            cursor: pointer;
         }
     }
 
@@ -129,9 +132,53 @@
 
     &__text {
         margin-top: 20px;
+        max-width: 400px;
     }
 
     &__button {
         display: none;
+    }
+
+    @include tablet {
+
+        &__content {
+            @include flex-center;
+            justify-content: space-between;
+        }
+
+        &__img {
+            width: 50%;
+        }
+
+        &__container {
+            margin: 0;
+            width: 45%;
+            text-align: left;
+        }
+
+        &__button {
+            margin-top: 20px;
+            padding: 0.5rem 1rem;
+            display: block;
+            border: none;
+            border-radius: 10px;
+            background-color: $blue;
+            color: white;
+        }
+    }
+
+    @include desktop {
+
+        &__bg-element {
+            top: 170px;
+            height: 250px;
+            max-width: 800px;
+            width: 50vw;
+        }
+
+        &__container {
+            width: 40%;
+            font-size: 1.125rem;
+        }
     }
 }
