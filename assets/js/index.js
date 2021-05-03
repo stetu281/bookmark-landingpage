@@ -32,3 +32,12 @@ for(let link of links) {
     })
 }
 
+
+const buttons = document.querySelectorAll('.faq__question-container');
+
+for(let button of buttons) {
+    button.addEventListener('click', (e) => {
+        e.target.children[1].classList.toggle('faq__arrow--open');
+        e.target.children[2].classList.toggle('faq__answer-container--open');
+    })
+}
