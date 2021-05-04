@@ -1,0 +1,66 @@
+.footer {
+    padding: 3rem 0;
+    background-color: $dark-blue;
+
+    &__content {
+        @include content-width;
+        @include flex-center;
+        flex-direction: column;
+    }
+
+    &__nav {
+        margin-top: 30px;
+    }
+
+    &__list-item {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    &__link {
+        color: white;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $red;
+        }
+    }
+
+    &__social {
+        @include flex-center;
+        margin-top: 30px;
+    }
+
+    &__icon {
+        margin-left: 30px;
+
+        &:hover {
+            cursor: pointer;
+            & > path {
+                fill: $red;
+            }
+        }
+    }
+
+    @include tablet {
+        padding: 1rem 0;
+
+        &__content {
+           flex-direction: row;
+        } 
+
+        &__nav {
+           margin: 0 0 0 50px;
+        }
+
+        &__list {
+           @include flex-center;
+        }
+
+        &__social {
+           margin-top: 0;
+           flex-grow: 1;
+           justify-content: flex-end;
+        }
+    }
+}
