@@ -41,3 +41,23 @@ for(let button of buttons) {
         e.target.children[2].classList.toggle('faq__answer-container--open');
     })
 }
+
+
+
+const submit = document.querySelector('.cta__button');
+
+submit.addEventListener('click', () => {
+    let input = document.querySelector('.cta__input');
+    const error = document.querySelector('.cta__error');
+    const icon = document.querySelector('.cta__icon');
+
+    if(input.value === "") {
+        error.style.top = "85%";
+        input.classList.add('cta__input--error');
+        icon.classList.add('cta__icon--show');
+    } else {
+        error.style.top = "0";
+        input.classList.remove('cta__input--error');
+        icon.classList.remove('cta__icon--show');
+    }
+})

@@ -627,15 +627,51 @@ button:hover {
 .cta__form {
   margin-top: 30px;
 }
+.cta__input-container {
+  width: 100%;
+  position: relative;
+}
 .cta__input {
   width: 100%;
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
   border: 2px solid white;
   border-radius: 5px;
+  position: relative;
+  z-index: 2;
+}
+.cta__input--error {
+  border-color: #fa5757;
+}
+.cta__error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #fa5757;
+  border-radius: 5px;
+  transition: top 0.3s ease;
+}
+.cta__error-text {
+  padding: 0.7rem 0 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  text-align: left;
+  color: white;
+}
+.cta__icon {
+  display: none;
+}
+.cta__icon--show {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  z-index: 3;
 }
 .cta__button {
-  margin-top: 20px;
+  margin-top: 40px;
   padding: 0.8rem 0;
   width: 100%;
   background-color: #fa5757;
@@ -659,7 +695,7 @@ button:hover {
     justify-content: space-between;
     width: 100%;
   }
-  .cta__input {
+  .cta__input-container {
     width: 66%;
   }
   .cta__button {

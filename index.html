@@ -199,9 +199,15 @@
     <div class="cta__content">
       <p class="cta__text">35,000+ already joined</p>
       <h2 class="cta__title">Stay up-to-date with what we’re doing</h2>
-      <form class="cta__form">
-        <input type="email" class="cta__input" placeholder="Enter your email address">
-        <button class="cta__button" type="submit">Contact Us</button> 
+      <form class="cta__form" name="form">
+        <div class="cta__input-container">
+          <input type="email" class="cta__input" placeholder="Enter your email address">
+          <img src="assets/images/icon-error.svg" class="cta__icon" alt="">
+          <div class="cta__error">
+            <p class="cta__error-text"><i>Whoops, make sure to enter a email</i></p>
+          </div>        
+        </div>
+        <button class="cta__button" type="button">Contact Us</button> 
       </form>  
     </div>
   </div>
