@@ -45,10 +45,7 @@
     }
 
     &__button {
-        padding: 0.8rem;
-        border: 1px solid transparent;
-        border-radius: 5px;
-        font-size: 0.9rem;
+        border-color: transparent;
 
         &--chrome {
             background-color: $blue;

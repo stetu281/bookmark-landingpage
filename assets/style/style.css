@@ -24,8 +24,11 @@ h3 {
 }
 
 button {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  padding: 0.8rem 1.5rem;
   font-family: "Rubik", sans-serif;
+  border-radius: 10px;
+  border: 2px solid;
 }
 button:hover {
   cursor: pointer;
@@ -67,6 +70,8 @@ button:hover {
   background-repeat: no-repeat;
   background-size: contain;
   border: none;
+  border-radius: 0;
+  padding: 0;
   background-color: transparent;
   z-index: 3;
 }
@@ -112,12 +117,9 @@ button:hover {
 .header__login {
   width: 90%;
   margin: 30px auto 0 auto;
-  padding: 0.5rem 0;
   display: block;
   background-color: transparent;
-  border: 2px solid white;
-  border-radius: 5px;
-  font-size: 1.2rem;
+  border-color: #fa5757;
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -178,7 +180,6 @@ button:hover {
     margin: 0;
     padding: 0.5rem 1.5rem;
     background-color: #fa5757;
-    font-size: 1rem;
     border: 1px solid white;
   }
   .header__login:hover {
@@ -242,10 +243,7 @@ button:hover {
   justify-content: space-evenly;
 }
 .hero__button {
-  padding: 0.8rem;
-  border: 1px solid transparent;
-  border-radius: 5px;
-  font-size: 0.9rem;
+  border-color: transparent;
 }
 .hero__button--chrome {
   background-color: #5368df;
@@ -439,12 +437,14 @@ button:hover {
   }
   .slider__button {
     margin-top: 20px;
-    padding: 0.5rem 1rem;
     display: block;
-    border: none;
-    border-radius: 10px;
+    border-color: #5368df;
     background-color: #5368df;
     color: white;
+  }
+  .slider__button:hover {
+    color: #5368df;
+    background-color: white;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -509,8 +509,7 @@ button:hover {
   margin: 20px;
   width: 80%;
   padding: 0.9rem;
-  border: 2px solid #5368df;
-  border-radius: 10px;
+  border-color: #5368df;
   background-color: #5368df;
   color: white;
 }
@@ -589,11 +588,13 @@ button:hover {
 }
 .faq__button {
   margin-top: 50px;
-  padding: 0.9rem 1.5rem;
-  border: none;
-  border-radius: 10px;
+  border-color: #5368df;
   background-color: #5368df;
   color: white;
+}
+.faq__button:hover {
+  background-color: white;
+  color: #5368df;
 }
 @media screen and (min-width: 1024px) {
   .faq {
@@ -679,8 +680,7 @@ button:hover {
   padding: 0.8rem 0;
   width: 100%;
   background-color: #fa5757;
-  border: 2px solid #fa5757;
-  border-radius: 5px;
+  border-color: #fa5757;
   color: white;
 }
 .cta__button:hover {
