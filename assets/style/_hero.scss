@@ -46,6 +46,7 @@
 
     &__button {
         border-color: transparent;
+        padding: 0.8rem 0.5rem;
 
         &--chrome {
             background-color: $blue;
@@ -89,6 +90,10 @@
 
         &__buttons {
             justify-content: flex-start;
+        }
+
+        &__button {
+            padding: 0.8rem 1.5rem;
         }
 
         &__button--chrome {
